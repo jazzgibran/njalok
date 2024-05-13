@@ -42,7 +42,7 @@ const MenuSection = () => {
   const nonKopiItems = menuItems.filter(item => item.description === 'nonkopi');
 
   return (
-    <div id='menu-section' className="w-full">
+    <div id='menu-section' className="w-full font-serif bg-black rounded-t-xl" >
       <div className="w-9/12 min-h-screen mx-auto flex flex-col justify-center items-center">
         <div className="max-w-4xl py-6">
           <h2 className="text-3xl font-semibold mb-6">Our Menu</h2>
@@ -53,7 +53,6 @@ const MenuSection = () => {
                 <MenuCard
                   key={item.title}
                   title={item.title}
-                  
                   price={item.price}
                 />
               ))}

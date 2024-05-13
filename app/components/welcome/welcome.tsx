@@ -14,7 +14,7 @@ const WelcomeSection = () => {
  
 
   return (
-    <section className="min-h-screen w-full flex flex-col justify-center overflow-hidden items-center">
+    <section id='first-section' className="min-h-screen w-full flex flex-col justify-center overflow-hidden items-center">
       <div className='w-full -z-10 min-h-screen absolute bottom-0'>
         <Image alt='background' src={bg} className='opacity-40 w-full h-screen object-cover'>
         </Image>
@@ -31,7 +31,6 @@ const WelcomeSection = () => {
       </div>
       <p className="absolute bottom-0 font-cinzel font-bold text-lg text-white">COME <a href="#contact-section" className='hover:text-gray-400 underline py-2 rounded'>VISIT</a> US NOW</p>
     </section>
-    
   );
 };
 

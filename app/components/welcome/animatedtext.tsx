@@ -23,7 +23,7 @@ const AnimatedText = () => {
           <p className="font-dm text-5xl mb-3 text-white text-center">Your daily dose of caffeine.</p>
           <hr />
         </div>
-        <p>Check our menu <a href="#menu-section" className="hover:text-gray-400 underline font-bold py-2 rounded ">here</a>!</p>
+        <p className='font-serif mt-2'>Check our menu <a href="#menu-section" className="hover:text-gray-400 underline font-bold py-2 rounded ">here</a>!</p>
       </motion.div>
     </>
   );
