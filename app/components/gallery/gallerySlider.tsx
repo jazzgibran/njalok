@@ -60,11 +60,6 @@ const GallerySlider = () => {
   }, []);
 
   const { img, desc } = imageItems[currentImageIndex] || { img: '', desc: '' };
-  
-  useEffect(() => {
-    console.log('Current Index:', currentImageIndex);
-    console.log('Total Images:', imageItems.length);
-  }, [currentImageIndex]);
 
   return (
     <div {...swipeHandlers} className="px-4 py-7 bg-white rounded-lg">
