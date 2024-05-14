@@ -1,47 +1,11 @@
 "use client"
 import React, { useEffect, useState, useRef } from 'react';
 import { useSwipeable } from 'react-swipeable';
-
+import imageItems from "./galleryItems.json"
 
 const ChatInterface = () => {
-
-  const items = [
-    {
-      img: "https://i.imgur.com/m2s2P1D.jpeg",
-      desc: 'Njalok Gallery',
-    },
-    {
-      img: "https://i.imgur.com/DFBoZjG.jpeg",
-      desc: 'Njalok Gallery',
-    },
-    {
-      img: "https://i.imgur.com/E0bilZy.jpeg",
-      desc: 'Njalok Gallery',
-    },
-    {
-      img: "https://i.imgur.com/I1YZm46.jpeg",
-      desc: 'Njalok Gallery',
-    },
-    {
-      img: "https://i.imgur.com/9j0ngxo.jpeg",
-      desc: 'Njalok Gallery',
-    },
-    {
-      img: "https://i.imgur.com/y8o0aO3.jpeg",
-      desc: 'Njalok Gallery',
-    },
-    {
-      img: "https://i.imgur.com/L7I6WCn.jpeg",
-      desc: 'Njalok Gallery',
-    },
-    {
-      img: "https://i.imgur.com/xqVHrBK.jpeg",
-      desc: 'Njalok Gallery',
-    },
- ]
-
   return (
-    <Chat items={items} />
+    <Chat items={imageItems} />
   );
 }
 
@@ -49,8 +13,6 @@ interface Item {
   img: string
   desc: string
 }
-
-
 
 const Chat = ({ items }: { items: Item[] }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
