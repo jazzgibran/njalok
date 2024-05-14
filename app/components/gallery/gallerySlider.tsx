@@ -3,21 +3,11 @@ import React, { useEffect, useState, useRef } from 'react';
 import { useSwipeable } from 'react-swipeable';
 import imageItems from "./galleryItems.json"
 
-const ChatInterface = () => {
-  return (
-    <Chat items={imageItems} />
-  );
-}
-
-interface Item {
-  img: string
-  desc: string
-}
-
-const Chat = ({ items }: { items: Item[] }) => {
+const GallerySlider = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [progress, setProgress] = useState(0);
   const intervalRef = useRef<NodeJS.Timeout | null>(null); // Ref for storing interval
+  
 
   const swipeHandlers = useSwipeable({
     onSwipedLeft: () => handleImageChange('next'),
@@ -26,10 +16,10 @@ const Chat = ({ items }: { items: Item[] }) => {
 
   const handleImageChange = (direction: 'next' | 'prev') => {
     if (direction === 'next') {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 0.5) % items.length);
+      setCurrentImageIndex((prevIndex) => (prevIndex + 0.5) % imageItems.length);
       setProgress(0);
     } else if (direction === 'prev') {
-      setCurrentImageIndex((prevIndex) => (prevIndex - 0.5 + items.length) % items.length);
+      setCurrentImageIndex((prevIndex) => (prevIndex - 0.5 + imageItems.length) % imageItems.length);
       setProgress(0);
     }
   };
@@ -69,7 +59,7 @@ const Chat = ({ items }: { items: Item[] }) => {
     return () => clearInterval(intervalRef.current as unknown as number); // Clean up the interval on unmount
   }, []);
 
-  const { img, desc } = items[currentImageIndex];
+  const { img, desc } = imageItems[currentImageIndex];
 
   return (
     <div {...swipeHandlers} className="px-4 py-7 bg-white rounded-lg">
@@ -92,9 +82,9 @@ const Chat = ({ items }: { items: Item[] }) => {
 
       {/* Buttons to change Image */}
       <div className="flex justify-center items-center space-x-1">
-        
+
         <div className="flex flex-wrap justify-center items-center">
-          {items.map((item, index) => (
+          {imageItems.map((item, index) => (
             <button
             key={index}
             className="p-2 rounded focus:outline-none focus-visible:ring focus-visible:ring-indigo-300 group"
@@ -115,4 +105,4 @@ const Chat = ({ items }: { items: Item[] }) => {
   );
 }
 
-export default ChatInterface;
+export default GallerySlider;
