@@ -3,6 +3,7 @@ import dynamic from 'next/dynamic';
 import bg from '../../assets/welcomebg.jpg';
 import Image from 'next/image';
 import logo from '../../assets/logonjalok.png';
+import Clock from '../Clock';
 
 const AnimatedText = dynamic(() => import('./animatedtext'), {
   ssr: false
@@ -23,9 +24,13 @@ const WelcomeSection = () => {
       </a>
         <a href='#about-section' className="hover:text-gray-400 rounded" >About</a>
       </div>
+      <div className="lg:absolute lg:bottom-5 lg:right-5 font-cinzel font-bold text-white">
+      <Clock/>
+      </div>
       <div className="max-w-[70%] sm:max-w-4xl f">
         <AnimatedText />        
       </div>
+      
       <p className="absolute bottom-0 font-cinzel font-bold text-lg text-white">COME <a href="#contact-section" className='hover:text-gray-400 underline py-2 rounded'>VISIT</a> US NOW</p>
     </section>
   );
