@@ -11,10 +11,10 @@ const MenuButton = () => {
   const kopiItems = menuItems.kopi;
   const nonKopiItems = menuItems.nonkopi;
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalContent, setModalContent] = useState({ description: '' });
+  const [modalContent, setModalContent] = useState({ description: '', title: '' });
 
-  const handleCardClick = (description: string) => {
-    setModalContent({ description});
+  const handleCardClick = (description: string, title: string) => {
+    setModalContent({ description, title});
     setIsModalOpen(true);
     console.log("CLICKED")
   };
@@ -30,8 +30,8 @@ const MenuButton = () => {
       exit={{ opacity: 0, y: 20 }}
       transition={{ duration: 0.5, delay: 0.3 }}
       viewport={{ once: true }}
-      className='min-h-screen relative py-6 md:py-0 bg-black flex mx-auto items-center flex-col gap-2'>
-      <div className='relative z-10'>
+      className=' py-6 md:py-0 bg-black flex mx-auto items-center flex-col gap-2'>
+      <div className=''>
         <h2 className="text-4xl lg:text-6xl text-center md:mt-10 block font-semibold">Our Menu</h2>
         <div className='flex justify-center mt-3 gap-3'>
           <button
@@ -63,7 +63,7 @@ const MenuButton = () => {
                 title={item.title}
                 price={item.price}
                 description={item.description}
-                onClick={() => handleCardClick(item.description)}
+                onClick={() => handleCardClick(item.description, item.title)}
               />
               ))}
             </div>
@@ -90,7 +90,7 @@ const MenuButton = () => {
                  title={item.title}
                  price={item.price}
                  description={item.description}
-                 onClick={() => handleCardClick(item.description)}
+                 onClick={() => handleCardClick(item.description, item.title)}
                />
               ))}
             </div>
@@ -99,7 +99,8 @@ const MenuButton = () => {
       </div>
       {isModalOpen == true  && (
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-      <p>{modalContent.description}</p>
+      <h4 className="text-xl font-semibold md:text-2xl lg:text-3xl mb-1">{modalContent.title}</h4>
+      <p className="">{modalContent.description}</p>
     </Modal>
     )
     }

@@ -1,109 +1,108 @@
 {
     "kopi": [
-    {
-        "title": "Espresso",
-        "description": "kopi",
-        "price": "6k-15k"
-        
-    },
-    {
-        "title": "Kopsu Aren",
-        "description": "kopi",
-        "price": "12k"
-    },
-    {
-        "title": "Kopi Irenk",
-        "description": "kopi",
-        "price": "6k"
-    },
-    {
-        "title": "Kopsu Hazelnut",
-        "description": "kopi",
-        "price": "13k"
-    },
-    {
-        "title": "Kopi Krim",
-        "description": "kopi",
-        "price": "10k"
-    },
-    {
-        "title": "Milo Kopi Krim",
-        "description": "kopi",
-        "price": "13k"
-    },
-    {
-        "title": "Cappucino",
-        "description": "kopi",
-        "price": "12k"
-    },
-    {
-        "title": "Kopi Filter",
-        "description": "kopi",
-        "price": "17k"
-    },
-    {
-        "title": "Es Kopi Filter",
-        "description": "kopi",
-        "price": "17k"
-    },
-    {
-        "title": "Vietnam Drip",
-        "description": "kopi",
-        "price": "12k"
-    }
-],
-"nonkopi": [
-    {
-        "title": "Susu Hazelnut",
-        "description": "nonkopi",
-        "price": "13k"
-    },
-    {
-        "title": "Teh (es/panas)",
-        "description": "nonkopi",
-        "price": "5k"
-    },
-    {
-        "title": "Pisang Susu",
-        "description": "nonkopi",
-        "price": "10k"
-    },
-    {
-        "title": "Regalan",
-        "description": "nonkopi",
-        "price": "12k"
-    },
-    {
-        "title": "Red Velvet",
-        "description": "nonkopi",
-        "price": "10k"
-    },
-    {
-        "title": "Matcha",
-        "description": "nonkopi",
-        "price": "12k"
-    },
-    {
-        "title": "Milo Krim",
-        "description": "nonkopi",
-        "price": "12k"
-    },
-    {
-        "title": "Susu Krim",
-        "description": "nonkopi",
-        "price": "10k"
-    },
-    {
-        "title": "Thai Tea",
-        "description": "nonkopi",
-        "price": "10k"
-    },
-    {
-        "title": "Teh Lemon",
-        "description": "nonkopi",
-        "price": "7k"
-    }
-    
-]
+        {
+            "title": "Espresso",
+            "description": "Kopi pekat yang disajikan dalam takaran kecil untuk rasa yang kuat dan intens.",
+            "price": "6k-15k"
+            
+        },
+        {
+            "title": "Kopsu Aren",
+            "description": "Kopi dengan tambahan gula aren asli, memberikan rasa manis alami dan aroma khas.",
+            "price": "12k"
+        },
+        {
+            "title": "Kopi Irenk",
+            "description": "Kopi robusta lokal dengan cita rasa yang kuat dan penuh, cocok untuk memulai hari.",
+            "price": "6k"
+        },
+        {
+            "title": "Kopsu Hazelnut",
+            "description": "Kopi dengan perpaduan rasa hazelnut yang manis dan aroma yang menggoda.",
+            "price": "13k"
+        },
+        {
+            "title": "Kopi Krim",
+            "description": "Kopi susu dengan tambahan krim kental, memberikan tekstur lembut dan rasa mewah.",
+            "price": "10k"
+        },
+        {
+            "title": "Milo Kopi Krim",
+            "description": "Perpaduan unik antara Milo dan kopi, ditambah krim untuk rasa yang kaya dan berlapis.",
+            "price": "13k"
+        },
+        {
+            "title": "Cappucino",
+            "description": "Kopi dengan busa susu yang tebal, sempurna untuk pecinta kopi yang menyukai keseimbangan rasa kopi dan susu.",
+            "price": "12k"
+        },
+        {
+            "title": "Kopi Filter",
+            "description": "Kopi yang diseduh dengan metode filter, menawarkan kejernihan rasa dan aroma kopi yang autentik.",
+            "price": "17k"
+        },
+        {
+            "title": "Es Kopi Filter",
+            "description": "Versi dingin dari kopi filter, menyegarkan dengan rasa kopi yang tetap kuat.",
+            "price": "17k"
+        },
+        {
+            "title": "Vietnam Drip",
+            "description": "Kopi Vietnam yang khas dengan metode tetesan, memberikan rasa yang kuat dan manis alami.",
+            "price": "12k"
+        }
+    ],
+    "nonkopi": [
+        {
+            "title": "Susu Hazelnut",
+            "description": "Minuman susu segar dengan perpaduan rasa hazelnut yang kaya, memberikan sensasi manis dan creamy.",
+            "price": "13k"
+        },
+        {
+            "title": "Teh (es/panas)",
+            "description": "Teh klasik yang dapat dinikmati panas atau dingin, sempurna untuk menemani hari Anda.",
+            "price": "5k"
+        },
+        {
+            "title": "Pisang Susu",
+            "description": "Minuman manis dan menyegarkan dari pisang asli yang dihaluskan dengan susu segar.",
+            "price": "10k"
+        },
+        {
+            "title": "Regalan",
+            "description": "Minuman tradisional dengan campuran rempah-rempah yang memberikan rasa hangat dan aroma yang menenangkan.",
+            "price": "12k"
+        },
+        {
+            "title": "Red Velvet",
+            "description": "Minuman yang terinspirasi dari kue red velvet, dengan rasa manis dan sedikit asam dari cream cheese.",
+            "price": "10k"
+        },
+        {
+            "title": "Matcha",
+            "description": "Minuman teh hijau Matcha yang kaya antioksidan, menawarkan rasa yang khas dengan manfaat kesehatan.",
+            "price": "12k"
+        },
+        {
+            "title": "Milo Krim",
+            "description": "Minuman cokelat Milo dengan tambahan krim yang lembut, cocok untuk dinikmati kapan saja.",
+            "price": "12k"
+        },
+        {
+            "title": "Susu Krim",
+            "description": "Susu segar yang dikombinasikan dengan krim kental, memberikan tekstur yang lembut dan rasa yang mewah.",
+            "price": "10k"
+        },
+        {
+            "title": "Thai Tea",
+            "description": "Teh Thailand yang khas dengan rasa manis dan creamy, disajikan dingin untuk kesegaran maksimal.",
+            "price": "10k"
+        },
+        {
+            "title": "Teh Lemon",
+            "description": "Teh segar dengan perasan lemon asli, memberikan kesegaran dan rasa asam yang menyenangkan.",
+            "price": "7k"
+        }
+    ]
 }
 

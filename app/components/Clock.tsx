@@ -40,12 +40,12 @@ const Clock = () => {
     }
 
     return (
-        <div className="text-white items-center font-bold text-right flex gap-2 text-2xl lg:text-5xl lg:block">
+        <div className="text-white items-center font-bold text-right flex gap-2 text-xl lg:text-5xl lg:block">
             <p>{weekday}</p>
             <h2>
                 {hours.toString().padStart(2, '0')}:{minutes.toString().padStart(2, '0')}
             </h2>
-            <p className='text-xl'>{countdown}</p>
+            <p className='text-sm md:text-base lg:text-lg'>{countdown}</p>
             
         </div>
     );

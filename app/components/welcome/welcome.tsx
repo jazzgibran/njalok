@@ -10,8 +10,6 @@ const AnimatedText = dynamic(() => import('./animatedtext'), {
 });
 
 const WelcomeSection = () => {
- 
-
   return (
     <section id='first-section' className="min-h-screen w-full flex flex-col justify-center overflow-hidden items-center">
       <div className='w-full -z-10 min-h-screen absolute bottom-0'>
