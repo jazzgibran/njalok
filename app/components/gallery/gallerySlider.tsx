@@ -16,10 +16,10 @@ const GallerySlider = () => {
 
   const handleImageChange = (direction: 'next' | 'prev') => {
     if (direction === 'next') {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 0.5) % imageItems.length);
+      setCurrentImageIndex(prevIndex => (prevIndex + 1) % imageItems.length);
       setProgress(0);
     } else if (direction === 'prev') {
-      setCurrentImageIndex((prevIndex) => (prevIndex - 0.5 + imageItems.length) % imageItems.length);
+      setCurrentImageIndex(prevIndex => (prevIndex - 1 + imageItems.length) % imageItems.length);
       setProgress(0);
     }
   };
@@ -59,7 +59,12 @@ const GallerySlider = () => {
     return () => clearInterval(intervalRef.current as unknown as number); // Clean up the interval on unmount
   }, []);
 
-  const { img, desc } = imageItems[currentImageIndex];
+  const { img, desc } = imageItems[currentImageIndex] || { img: '', desc: '' };
+  
+  useEffect(() => {
+    console.log('Current Index:', currentImageIndex);
+    console.log('Total Images:', imageItems.length);
+  }, [currentImageIndex]);
 
   return (
     <div {...swipeHandlers} className="px-4 py-7 bg-white rounded-lg">
@@ -70,7 +75,6 @@ const GallerySlider = () => {
       </div>
       
       </div>
-      
 
       {/* Progress Bar */}
       {/* <div className="w-3/12 mx-auto mt-4 h-1 bg-white rounded">
