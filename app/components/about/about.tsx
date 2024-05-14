@@ -11,9 +11,12 @@ const AboutSection = () => {
       </video>
       <div className="w-9/12 py-10 mx-auto min-h-screen flex flex-col justify-center items-center z-10 relative">
         <div className='max-w-4xl'>
-          <h2 className="font-dm text-xl lg:text-3xl mb-4">Get to Know N&apos; jalok Kopi</h2>
-          <p className="font-serif lg:text-lg mb-8">N&apos; jalok Kopi isn&apos;t just a cafe; it&apos; s a culmination of passion, dedication, and a love for great coffee and community. Founded in 2020 by Angga, our journey began with a simple idea: to create a space where people could come together, enjoy exceptional coffee, and forge meaningful connections.</p>
-          <p className="font-serif lg:text-lg mb-8">Our cafe is committed to community engagement, sustainability, and delivering high-quality products.</p>
+          <h1 className="font-dm text-md lg:text-3xl mb-4">Get to Know N&apos;jalok Kopi</h1>
+          <h1 className="font-serif text-sm lg:text-lg mb-8">N&apos;jalok Kopi
+          <span> isn&apos;t just a cafe; it&apos;s a culmination of passion, dedication, and a love for great coffee and community. Founded in 2020 by Angga, our journey began with a simple idea: to create a space where people could come together, enjoy exceptional coffee, and forge meaningful connections.
+            </span>  
+            </h1>
+          <p className="font-serif text-sm lg:text-lg mb-8">Our cafe is committed to community engagement, sustainability, and delivering high-quality products.</p>
           <div className="">
               <Image src={pict} alt="Founder" className="mx-auto w-24 lg:w-32 rounded-full mb-2" />
               <h3 className="font-serif lg:text-xl">Angga Syfa Kurniawan</h3>

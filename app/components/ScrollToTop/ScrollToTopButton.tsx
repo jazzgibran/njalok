@@ -30,7 +30,7 @@ function ScrollToTopButton() {
     }, []);
     return (
         <button
-            className={`hover:text-white hover:bg-black animate-bounce fixed bottom-0 left-0 right-0 w-fit px-3 py-1 mx-auto text-black bg-white rounded-full mb-[71px] z-50 items-center gap-2 ${isVisible ? '' : 'hidden'}`}
+            className={`hover:text-white hover:bg-black animate-bounce fixed -bottom-10 left-0 right-0 w-fit px-3 py-1 mx-auto text-black bg-white rounded-full mb-[71px] z-50 items-center gap-2 ${isVisible ? '' : 'hidden'}`}
             onClick={scrollToTop}
         >
             <p className='font-cinzel font-bold '>Back to Top</p>

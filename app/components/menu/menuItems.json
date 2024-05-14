@@ -1,0 +1,109 @@
+{
+    "kopi": [
+    {
+        "title": "Espresso",
+        "description": "kopi",
+        "price": "6k-15k"
+        
+    },
+    {
+        "title": "Kopsu Aren",
+        "description": "kopi",
+        "price": "12k"
+    },
+    {
+        "title": "Kopi Irenk",
+        "description": "kopi",
+        "price": "6k"
+    },
+    {
+        "title": "Kopsu Hazelnut",
+        "description": "kopi",
+        "price": "13k"
+    },
+    {
+        "title": "Kopi Krim",
+        "description": "kopi",
+        "price": "10k"
+    },
+    {
+        "title": "Milo Kopi Krim",
+        "description": "kopi",
+        "price": "13k"
+    },
+    {
+        "title": "Cappucino",
+        "description": "kopi",
+        "price": "12k"
+    },
+    {
+        "title": "Kopi Filter",
+        "description": "kopi",
+        "price": "17k"
+    },
+    {
+        "title": "Es Kopi Filter",
+        "description": "kopi",
+        "price": "17k"
+    },
+    {
+        "title": "Vietnam Drip",
+        "description": "kopi",
+        "price": "12k"
+    }
+],
+"nonkopi": [
+    {
+        "title": "Susu Hazelnut",
+        "description": "nonkopi",
+        "price": "13k"
+    },
+    {
+        "title": "Teh (es/panas)",
+        "description": "nonkopi",
+        "price": "5k"
+    },
+    {
+        "title": "Pisang Susu",
+        "description": "nonkopi",
+        "price": "10k"
+    },
+    {
+        "title": "Regalan",
+        "description": "nonkopi",
+        "price": "12k"
+    },
+    {
+        "title": "Red Velvet",
+        "description": "nonkopi",
+        "price": "10k"
+    },
+    {
+        "title": "Matcha",
+        "description": "nonkopi",
+        "price": "12k"
+    },
+    {
+        "title": "Milo Krim",
+        "description": "nonkopi",
+        "price": "12k"
+    },
+    {
+        "title": "Susu Krim",
+        "description": "nonkopi",
+        "price": "10k"
+    },
+    {
+        "title": "Thai Tea",
+        "description": "nonkopi",
+        "price": "10k"
+    },
+    {
+        "title": "Teh Lemon",
+        "description": "nonkopi",
+        "price": "7k"
+    }
+    
+]
+}
+

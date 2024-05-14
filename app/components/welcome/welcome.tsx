@@ -2,8 +2,6 @@ import React from 'react';
 import dynamic from 'next/dynamic';
 import bg from '../../assets/welcomebg.jpg';
 import Image from 'next/image';
-
-import AboutButton from '../about/aboutButton';
 import logo from '../../assets/logonjalok.png';
 
 const AnimatedText = dynamic(() => import('./animatedtext'), {
@@ -23,7 +21,6 @@ const WelcomeSection = () => {
       <a href='#about-section' >
       <Image alt='logo'src={logo} className='w-32'></Image>
       </a>
-      
         <a href='#about-section' className="hover:text-gray-400 rounded" >About</a>
       </div>
       <div className="max-w-[70%] sm:max-w-4xl f">
